@@ -27,7 +27,6 @@ public class HelloControllerTest {
                 .andExpect(content().string(hello));
     }
 
-
     @Test
     public void helloDto가_리턴된다() throws Exception {
         String name = "test";
