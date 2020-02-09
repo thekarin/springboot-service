@@ -16,7 +16,7 @@ apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
 
-group 'org.example'
+group 'me.thekarin.book'
 version '1.0-SNAPSHOT'
 
 sourceCompatibility = 1.8
@@ -28,5 +28,9 @@ repositories {
 
 dependencies {
     compile('org.springframework.boot:spring-boot-starter-web')
+    compile('org.projectlombok:lombok')
+//    annotationProcessor('org.projectlombok:lombok')
     testCompile('org.springframework.boot:spring-boot-starter-test')
+//    testCompile('org.projectlombok:lombok')
+//    testAnnotationProcessor('org.projectlombok:lombok')
 }
